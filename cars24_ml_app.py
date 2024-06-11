@@ -29,6 +29,7 @@ def model_pred(fuel_type, transmission_type, seats, engine):
     with open ("car_pred","rb") as file:
         reg_model=pickle.load(file)
     input_ftrs=[[2018.0,1,40000,fuel_type,transmission_type,19.70,engine,86.30,seats]]
+    return reg_model.predict(input_ftrs)
 
 if st.button("Predict Price"):
     fuel_type=encode_dict['fuel_type'][fuel_type]
