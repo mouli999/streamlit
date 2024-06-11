@@ -20,7 +20,7 @@ seats=col2.selectbox("Select number of seats",
                      [4,5,6,7,8])
 
 encode_dict={
-    "fuel_type": {"Diesel":1, "Petrol":2,"CNG":3,"LPG":4,"Electric":5}
+    "fuel_type": {"Diesel":1, "Petrol":2,"CNG":3,"LPG":4,"Electric":5},
     "transmission_type":{"Manual":1,"Automatic":2}
 }
 
